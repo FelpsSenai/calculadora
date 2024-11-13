@@ -64,13 +64,13 @@ describe("Calculos Combinados - Operações Mistas", () => {
   });
 
   // //Erro
-  // it("1 + 2 * 3", () => {
-  //   cy.get('[data-cy="1"]').click();
-  //   cy.get('[data-cy="+"]').click();
-  //   cy.get('[data-cy="2"]').click();
-  //   cy.get('[data-cy="x"]').click();
-  //   cy.get('[data-cy="3"]').click();
-  //   cy.get('[data-cy="="]').click();
-  //   cy.get('[data-cy="display-container"]').should("have.text", "7");
-  // });
+  it("1 + 2 * 3", () => {
+    cy.get('[data-cy="1"]').click();
+    cy.get('[data-cy="+"]').click();
+    cy.get('[data-cy="2"]').click();
+    cy.get('[data-cy="x"]').click();
+    cy.get('[data-cy="3"]').click();
+    cy.get('[data-cy="="]').click();
+    cy.get('[data-cy="display-container"]').should("have.text", "7");
+  });
 });
